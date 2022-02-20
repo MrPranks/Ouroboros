@@ -1,0 +1,21 @@
+import math
+import random
+import sys
+from traceback import print_tb
+
+caras = int(input("seleccione el numero de caras "))
+
+face = random.randint(1,caras)
+
+seguir = True
+
+while seguir: 
+    face = random.randint(1,caras)
+    print(face)
+    answer = input("¿desea tirar el dado otra vez?: (si/no) ").lower()
+    if answer == "no" or answer == "non" or answer == "n":
+        seguir = False
+    else:
+        seguir = True
+
+print(seguir)
